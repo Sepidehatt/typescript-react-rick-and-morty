@@ -37,7 +37,7 @@ const useFetchCharacters = ({
       setTotalPages(response.info?.pages || 0);
     } catch (error) {
       console.error('Failed to fetch characters:', error);
-      
+
       setCharacters([]);
       setTotalPages(0);
       setError(error instanceof Error ? error : new Error('An error occurred'));
