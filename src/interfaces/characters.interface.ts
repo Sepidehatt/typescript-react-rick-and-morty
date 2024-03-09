@@ -33,3 +33,7 @@ export interface CharacterQueryParams {
   page: number;
   name: string;
 }
+
+export interface CharacterProps {
+  character: Character;
+}

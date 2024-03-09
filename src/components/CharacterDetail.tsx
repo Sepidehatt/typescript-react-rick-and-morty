@@ -1,13 +1,10 @@
 import { FC } from 'react';
 import useOpenController from '../hooks/useOpenController';
-import { Character } from '../interfaces/characters.interface';
+import NestedTableDetail from './NestedTableDetail';
 import { ExpendableButton } from './buttons/ExpandableButton';
+import { CharacterProps } from '../interfaces/characters.interface';
 
-interface CharacterDetailProps {
-  character: Character;
-}
-
-const CharacterDetail: FC<CharacterDetailProps> = ({ character }) => {
+const CharacterDetail: FC<CharacterProps> = ({ character }) => {
   const { isOpen, toggle } = useOpenController(false);
 
   return (
@@ -23,6 +20,7 @@ const CharacterDetail: FC<CharacterDetailProps> = ({ character }) => {
         <td>{character.location?.name}</td>
         <td>{character.episode?.length}</td>
       </tr>
+      {isOpen && <NestedTableDetail character={character} />}
     </tbody>
   );
 };
