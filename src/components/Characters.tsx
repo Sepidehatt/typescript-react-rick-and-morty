@@ -1,4 +1,4 @@
-import CharacterDetail from './characterDetail';
+import CharacterDetail from './CharacterDetail';
 import { useCharacters } from '../context/CharactersContext';
 import { Character } from '../interfaces/characters.interface';
 
