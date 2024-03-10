@@ -1,0 +1,30 @@
+.homepage-banner {
+  height: 55vh;
+  width: 100%;
+  background-image: url('../assets/homepage-banner/rick-morty-bg.png');
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 30px;
+
+  h1 {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 7em;
+    letter-spacing: -0.1em;
+    text-shadow:   0 1px 0 hsl(174,5%,80%),
+	                 0 2px 0 hsl(174,5%,75%),
+	                 0 3px 0 hsl(174,5%,70%),
+	                 0 4px 0 hsl(174,5%,66%),
+	                 0 5px 0 hsl(180, 3%, 36%),
+	                 0 6px 0 hsl(180, 3%, 23%),
+	                 0 7px 0 hsl(180, 3%, 17%),
+	                 0 8px 0 hsl(180, 4%, 9%);
+	
+  }
+}
