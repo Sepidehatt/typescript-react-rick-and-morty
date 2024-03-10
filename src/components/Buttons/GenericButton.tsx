@@ -1,7 +1,7 @@
 import React from 'react';
 
 type GenericButtonProps = {
-  label: string;
+  label: React.ReactNode;
   onClick: () => void;
   disabled?: boolean;
 };
@@ -12,7 +12,7 @@ const GenericButton: React.FC<GenericButtonProps> = ({
   disabled = false,
 }) => {
   return (
-    <button onClick={onClick} disabled={disabled}>
+    <button className="btn btn-sm border-0" onClick={onClick} disabled={disabled}>
       {label}
     </button>
   );
