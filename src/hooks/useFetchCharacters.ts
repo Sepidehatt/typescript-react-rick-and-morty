@@ -38,9 +38,15 @@ const useFetchCharacters = ({
     } catch (error) {
       console.error('Failed to fetch characters:', error);
 
+      if ((error as any).status === 404) {
+        setError(new Error('Character not found'));
+      } else {
+        setError(
+          error instanceof Error ? error : new Error('An error occurred'),
+        );
+      }
       setCharacters([]);
       setTotalPages(0);
-      setError(error instanceof Error ? error : new Error('An error occurred'));
     } finally {
       setLoading(false);
     }
