@@ -19,7 +19,7 @@ const Characters = () => {
         </div>
       )}
       {error && (
-        <div className="alert alert-danger w-25" role="alert">
+        <div className="alert alert-warning mx-5 my-3" role="alert">
           Error fetching characters: {error.message}
         </div>
       )}
@@ -29,12 +29,14 @@ const Characters = () => {
       >
         <table className="table table-sm table-bordered">
           <thead>
-            <th>Name</th>
-            <th>Status</th>
-            <th>Species</th>
-            <th>Gender</th>
-            <th>Location</th>
-            <th>Episodes</th>
+            <tr>
+              <th>Name</th>
+              <th>Status</th>
+              <th>Species</th>
+              <th>Gender</th>
+              <th>Location</th>
+              <th>Episodes</th>
+            </tr>
           </thead>
           {characters?.map((character: Character) => (
             <CharacterDetail
