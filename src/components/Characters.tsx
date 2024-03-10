@@ -1,6 +1,7 @@
 import CharacterDetail from './CharacterDetail';
 import { useCharacters } from '../context/CharactersContext';
 import { Character } from '../interfaces/characters.interface';
+import './Characters.style.scss';
 
 const Characters = () => {
   const { characters, loading, error } = useCharacters();
@@ -9,10 +10,9 @@ const Characters = () => {
     <>
       {loading && <p>Loading...</p>}
       {error && <p>Error fetching characters: {error.message}</p>}
-      <div>Characters</div>
-      <table>
+      <div className="table-responsive mx-auto my-3" style={{ maxWidth: '90%' }}> 
+      <table className="table table-sm table-bordered">
         <thead>
-          <td></td>
           <th>Name</th>
           <th>Status</th>
           <th>Species</th>
@@ -27,6 +27,7 @@ const Characters = () => {
           />
         ))}
       </table>
+      </div>
     </>
   );
 };
