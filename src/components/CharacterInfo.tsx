@@ -10,7 +10,10 @@ interface CharacterInfoProps {
   }[];
 }
 
-const CharacterInfo: React.FC<CharacterInfoProps> = ({ character, characterDetails }) => {
+const CharacterInfo: React.FC<CharacterInfoProps> = ({
+  character,
+  characterDetails,
+}) => {
   return (
     <div className="col-md-6 d-flex align-items-center">
       <div className="me-3">
@@ -21,7 +24,10 @@ const CharacterInfo: React.FC<CharacterInfoProps> = ({ character, characterDetai
         <div>
           {characterDetails.map((detail, index) => (
             <div key={index} className="mb-1">
-              <strong>{detail.emoji} {detail.label}:</strong> {detail.value}
+              <strong>
+                {detail.emoji} {detail.label}:
+              </strong>{' '}
+              {detail.value}
             </div>
           ))}
         </div>

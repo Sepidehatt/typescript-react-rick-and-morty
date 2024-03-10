@@ -14,24 +14,20 @@ const CharactersPagination: React.FC = () => {
   };
 
   return (
-    <div className='mb-5'>
+    <div className="mb-5">
       <GenericButton
-        label={<span 
-        className="material-symbols-outlined">
-        arrow_back_ios
-        </span>}
+        label={
+          <span className="material-symbols-outlined">arrow_back_ios</span>
+        }
         onClick={handlePreviousPage}
         disabled={currentPage <= 1}
       />
-      <span >
-        {currentPage} of {totalPages}
-        {' '}
+      <span>
+        {currentPage} of {totalPages}{' '}
       </span>
       <GenericButton
         label={
-          <span className="material-symbols-outlined">
-            arrow_forward_ios
-          </span>
+          <span className="material-symbols-outlined">arrow_forward_ios</span>
         }
         onClick={handleNextPage}
         disabled={currentPage >= totalPages}

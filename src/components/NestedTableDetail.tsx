@@ -7,7 +7,6 @@ import EpisodesList from './EpisodesList';
 import { CharacterProps } from '../interfaces/characters.interface';
 
 const NestedTableDetail: React.FC<CharacterProps> = ({ character }) => {
-
   const { episodes, loadMore, loading } = useEpisodes(character.episode);
   const lastEpisodeElementRef = useRef(null);
   const characterDetails = useCharacterDetails(character);
@@ -20,7 +19,10 @@ const NestedTableDetail: React.FC<CharacterProps> = ({ character }) => {
     <tr>
       <td colSpan="6">
         <div className="row px-md-4 my-3" style={{ maxWidth: '95%' }}>
-          <CharacterInfo character={character} characterDetails={characterDetails} />
+          <CharacterInfo
+            character={character}
+            characterDetails={characterDetails}
+          />
           <EpisodesList
             episodes={episodes}
             loading={loading}

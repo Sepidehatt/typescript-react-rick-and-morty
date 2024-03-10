@@ -3,7 +3,7 @@ import { RefObject, useEffect, useRef } from 'react';
 export const useIntersectionObserver = (
   target: RefObject<Element>,
   onIntersect: () => void,
-  enabled = true
+  enabled = true,
 ) => {
   const observer = useRef<IntersectionObserver | null>(null);
 
@@ -15,7 +15,10 @@ export const useIntersectionObserver = (
     observer.current?.disconnect();
     observer.current = new IntersectionObserver(
       ([entry]) => entry.isIntersecting && onIntersect(),
-      { root: document.querySelector('#scrollable-table'), rootMargin: '100px' }
+      {
+        root: document.querySelector('#scrollable-table'),
+        rootMargin: '100px',
+      },
     );
 
     const currentTarget = target.current;

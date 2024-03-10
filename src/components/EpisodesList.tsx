@@ -11,11 +11,22 @@ interface EpisodesListProps {
     | null;
 }
 
-const EpisodesList: React.FC<EpisodesListProps> = ({ episodes, loading, lastEpisodeElementRef }) => {
+const EpisodesList: React.FC<EpisodesListProps> = ({
+  episodes,
+  loading,
+  lastEpisodeElementRef,
+}) => {
   return (
     <div className="col-md-6 ps-4">
-      <div className="table-responsive" id='scrollable-table' style={{ maxHeight: '300px', overflow: 'auto' }}>
-        <table className="table table-sm mx-auto my-3" style={{ tableLayout: 'fixed' }}>
+      <div
+        className="table-responsive"
+        id="scrollable-table"
+        style={{ maxHeight: '300px', overflow: 'auto' }}
+      >
+        <table
+          className="table table-sm mx-auto my-3"
+          style={{ tableLayout: 'fixed' }}
+        >
           <thead>
             <tr>
               <th className="w-50">Name</th>

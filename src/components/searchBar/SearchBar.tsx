@@ -10,13 +10,13 @@ const SearchBar: React.FC = () => {
   };
 
   return (
-    <div className='col-3'>
+    <div className="col-3">
       <input
         className="form-control "
-            type="text"
-            placeholder="Search for a character"
-            onChange={handleInputChange}
-          />
+        type="text"
+        placeholder="Search for a character"
+        onChange={handleInputChange}
+      />
     </div>
   );
 };

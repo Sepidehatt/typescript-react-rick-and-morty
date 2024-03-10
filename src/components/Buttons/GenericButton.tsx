@@ -12,7 +12,11 @@ const GenericButton: React.FC<GenericButtonProps> = ({
   disabled = false,
 }) => {
   return (
-    <button className="btn btn-sm border-0" onClick={onClick} disabled={disabled}>
+    <button
+      className="btn btn-sm border-0"
+      onClick={onClick}
+      disabled={disabled}
+    >
       {label}
     </button>
   );

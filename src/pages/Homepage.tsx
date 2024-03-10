@@ -7,23 +7,23 @@ import './Homepage.style.scss';
 const HomePage = () => {
   return (
     <CharactersProvider>
-    <div className="homepage-banner">
-      <h1>RICK & MORTY</h1>
-      <SearchBar />
-    </div>
-    <div className="container characters-content">
-      <div className="row">
-        <div className="col">
-          <Characters />
+      <div className="homepage-banner">
+        <h1>RICK & MORTY</h1>
+        <SearchBar />
+      </div>
+      <div className="container characters-content">
+        <div className="row">
+          <div className="col">
+            <Characters />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col d-flex justify-content-center">
+            <CharactersPagination />
+          </div>
         </div>
       </div>
-      <div className="row">
-        <div className="col d-flex justify-content-center">
-          <CharactersPagination />
-        </div>
-      </div>
-    </div>
-  </CharactersProvider>
+    </CharactersProvider>
   );
 };
 
