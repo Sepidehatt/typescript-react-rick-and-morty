@@ -17,7 +17,7 @@ const NestedTableDetail: React.FC<CharacterProps> = ({ character }) => {
 
   return (
     <tr>
-      <td colSpan="6">
+      <td colSpan={6}>
         <div className="row px-md-4 my-3" style={{ maxWidth: '95%' }}>
           <CharacterInfo
             character={character}
