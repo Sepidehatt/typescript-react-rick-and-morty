@@ -24,7 +24,7 @@ const EpisodesList: React.FC<EpisodesListProps> = ({
         style={{ maxHeight: '300px', overflow: 'auto' }}
       >
         <table
-          className="table table-sm mx-auto my-3"
+          className="table table-sm table-striped mx-auto my-3"
           style={{ tableLayout: 'fixed' }}
         >
           <thead>
