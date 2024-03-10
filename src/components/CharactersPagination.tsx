@@ -1,6 +1,6 @@
 import React from 'react';
 import { useCharacters } from '../context/CharactersContext';
-import GenericButton from './buttons/GenericButton';
+import GenericButton from './buttons/GenericButton.tsx';
 
 const CharactersPagination: React.FC = () => {
   const { totalPages, setCurrentPage, currentPage } = useCharacters();
