@@ -1,7 +1,6 @@
 import { FC } from 'react';
 import useOpenController from '../hooks/useOpenController';
 import NestedTableDetail from './NestedTableDetail';
-import { ExpendableButton } from './buttons/ExpandableButton';
 import { CharacterProps } from '../interfaces/characters.interface';
 
 const CharacterDetail: FC<CharacterProps> = ({ character }) => {
@@ -9,11 +8,19 @@ const CharacterDetail: FC<CharacterProps> = ({ character }) => {
 
   return (
     <tbody>
-      <tr>
-        <td className="button-td">
-          <ExpendableButton isOpen={isOpen} toggle={toggle} />
+      <tr onClick={toggle} style={{cursor: 'pointer'}} >
+        <td>
+        <span
+        className="material-symbols-outlined"
+        style={{
+          transform: `rotate(${isOpen ? 180 : 0}deg)`,
+          transition: 'all 0.25s',
+        }}
+      >
+        expand_more
+      </span>
+          {character.name}
         </td>
-        <td>{character.name}</td>
         <td>{character.status}</td>
         <td>{character.species}</td>
         <td>{character.gender}</td>
