@@ -9,21 +9,10 @@ const Characters = () => {
   return (
     <>
       {loading && (
-        <div
-          className="d-flex justify-content-center align-items-center"
-          style={{
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            height: '100vh',
-            width: '100vw',
-            background: 'rgba(0, 0, 0, 0.5)',
-          }}
-        >
+        <div className="spinner-overlay">
           <div
-            className="spinner-border text-primary"
+            className="spinner-border text-primary spinner-border-large"
             role="status"
-            style={{ width: '3rem', height: '3rem' }}
           >
             <span className="visually-hidden">Loading...</span>
           </div>
