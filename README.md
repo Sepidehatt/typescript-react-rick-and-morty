@@ -10,7 +10,7 @@ Before we jump into the portal, let's make sure you have everything you need:
 
 ### How to Run
 
-1. Clone
+1. Clone the project
 2. Install the dependencies:
 
 ```bash
@@ -20,6 +20,14 @@ Start the server:
 
 ```bash
 npm run dev
+```
+Alternatively, you can run the docker:
+```bash
+docker run -d sepideh1989/rick-and-morty:latest
+```
+And open this URL in the browser:
+```bash
+http://127.0.0.1:5173/
 ```
 
 Voilà! You're now running the project locally. Explore the homepage rooted at / to see a table filled with Rick and Morty characters.
