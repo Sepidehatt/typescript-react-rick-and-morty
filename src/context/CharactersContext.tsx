@@ -1,4 +1,4 @@
-import { createContext, useState, useContext, ReactNode, FC } from 'react';
+import { createContext, useState, useContext, ReactNode } from 'react';
 import useFetchCharacters from '../hooks/useFetchCharacters';
 import { Character } from '../interfaces/characters.interface';
 
@@ -20,7 +20,7 @@ interface CharactersProviderProps {
   children: ReactNode;
 }
 
-export const CharactersProvider: FC<CharactersProviderProps> = ({
+export const CharactersProvider: React.FC<CharactersProviderProps> = ({
   children,
 }) => {
   const [searchTerm, setSearchTerm] = useState<string>('');
