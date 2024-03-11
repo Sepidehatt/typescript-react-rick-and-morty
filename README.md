@@ -42,7 +42,7 @@ npm run test
 # See It Live! 🌍
 This project is deployed on Netlify. Check it out here: [Rick & Morty](https://rick-and-morty-fan-club.netlify.app/)
 
-
+---
 A Fun Fact Before You Go 🎉
 Initially, this project was set in the JavaScript dimension. But, just before styling, I decided to refactor it in TypeScript. Check out the original JavaScript repository [here](https://github.com/Sepidehatt/React-Rick-and-Morty).
 
