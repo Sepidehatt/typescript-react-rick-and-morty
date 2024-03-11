@@ -1,6 +1,6 @@
-import { CharacterProps } from '../interfaces/characters.interface';
+import { Character } from '../interfaces/characters.interface';
 
-export const useCharacterDetails = (character: CharacterProps['character']) => {
+export const useCharacterDetails = (character: Character) => {
   return [
     { label: 'Gender', value: character.gender, emoji: '👤' },
     { label: 'Status', value: character.status, emoji: '💓' },

@@ -2,14 +2,14 @@ import { useState, useEffect, useCallback } from 'react';
 import { apiServices } from '../services/ApiService';
 import { EpisodeResponse } from '../interfaces/episodes.interface';
 
-interface UseEpisodesReturn {
+interface UseEpisodes {
   episodes: EpisodeResponse[];
   loading: boolean;
   error: Error | null;
   loadMore: () => void;
 }
 
-const useEpisodes = (episodeUrls: string[]): UseEpisodesReturn => {
+const useEpisodes = (episodeUrls: string[]): UseEpisodes => {
   const [episodes, setEpisodes] = useState<EpisodeResponse[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<Error | null>(null);
