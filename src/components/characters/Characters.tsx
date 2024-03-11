@@ -1,6 +1,6 @@
 import CharacterDetail from './CharacterDetail';
-import { useCharacters } from '../context/CharactersContext';
-import { Character } from '../interfaces/characters.interface';
+import { useCharacters } from '../../context/CharactersContext';
+import { Character } from '../../interfaces/characters.interface';
 import './Characters.style.scss';
 
 const Characters = () => {

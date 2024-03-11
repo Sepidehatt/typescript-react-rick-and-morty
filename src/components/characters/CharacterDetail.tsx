@@ -1,6 +1,6 @@
-import useOpenController from '../hooks/useOpenController';
+import useOpenController from '../../hooks/useOpenController';
 import NestedTableDetail from './NestedTableDetail';
-import { CharacterProps } from '../interfaces/characters.interface';
+import { CharacterProps } from '../../interfaces/characters.interface';
 
 const CharacterDetail: React.FC<CharacterProps> = ({ character }) => {
   const { isOpen, toggle } = useOpenController(false);

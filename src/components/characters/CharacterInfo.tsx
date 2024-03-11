@@ -1,5 +1,5 @@
 import React from 'react';
-import { Character } from '../interfaces/characters.interface';
+import { Character } from '../../interfaces/characters.interface';
 
 interface CharacterInfoProps {
   character: Character;

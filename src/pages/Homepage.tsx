@@ -1,6 +1,6 @@
 import { CharactersProvider } from '../context/CharactersContext';
-import Characters from '../components/Characters';
-import CharactersPagination from '../components/CharactersPagination';
+import Characters from '../components/characters/Characters';
+import CharactersPagination from '../components/characters/CharactersPagination';
 import SearchBar from '../components/searchBar/SearchBar';
 import './Homepage.style.scss';
 

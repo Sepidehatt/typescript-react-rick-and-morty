@@ -1,6 +1,6 @@
 import React from 'react';
 import EpisodeDetail from './EpisodeDetail';
-import { EpisodeResponse } from '../interfaces/episodes.interface';
+import { EpisodeResponse } from '../../interfaces/episodes.interface';
 
 interface EpisodesListProps {
   episodes: EpisodeResponse[];

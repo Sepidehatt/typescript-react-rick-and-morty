@@ -1,5 +1,5 @@
 import React from 'react';
-import { EpisodeResponse } from '../interfaces/episodes.interface';
+import { EpisodeResponse } from '../../interfaces/episodes.interface';
 
 interface EpisodeDetailProps {
   index: number;

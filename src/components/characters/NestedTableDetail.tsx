@@ -1,10 +1,10 @@
 import { useRef } from 'react';
-import useEpisodes from '../hooks/useEpisode';
-import { useCharacterDetails } from '../hooks/useCharacterDetail';
-import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
+import useEpisodes from '../../hooks/useEpisode';
+import { useCharacterDetails } from '../../hooks/useCharacterDetail';
+import { useIntersectionObserver } from '../../hooks/useIntersectionObserver';
 import CharacterInfo from './CharacterInfo';
-import EpisodesList from './EpisodesList';
-import { CharacterProps } from '../interfaces/characters.interface';
+import EpisodesList from '../episodes/EpisodesList';
+import { CharacterProps } from '../../interfaces/characters.interface';
 
 const NestedTableDetail: React.FC<CharacterProps> = ({ character }) => {
   const { episodes, loadMore, loading } = useEpisodes(character.episode);
