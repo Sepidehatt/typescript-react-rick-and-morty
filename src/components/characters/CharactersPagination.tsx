@@ -22,9 +22,7 @@ const CharactersPagination: React.FC = () => {
         onClick={handlePreviousPage}
         disabled={currentPage <= 1}
       />
-      <span>
-        {currentPage} of {totalPages}{' '}
-      </span>
+      <span>{`${currentPage} of ${totalPages} `}</span>
       <GenericButton
         label={
           <span className="material-symbols-outlined">arrow_forward_ios</span>

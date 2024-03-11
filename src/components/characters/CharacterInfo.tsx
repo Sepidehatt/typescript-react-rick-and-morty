@@ -24,9 +24,7 @@ const CharacterInfo: React.FC<CharacterInfoProps> = ({
         <div>
           {characterDetails.map((detail, index) => (
             <div key={index} className="mb-1">
-              <strong>
-                {detail.emoji} {detail.label}:
-              </strong>{' '}
+              <strong>{`${detail.emoji} ${detail.label}: `}</strong>
               {detail.value}
             </div>
           ))}
