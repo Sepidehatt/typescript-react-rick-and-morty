@@ -1,4 +1,4 @@
-# Welcome to the Rick and Morty Project! 🚀
+# Rick and Morty Project! 🚀
 
 A wise person (me 😄) once said, "Even as a Web developer, you should create fun things to stay motivated to learn!" And what could be more fun than combining coding with the universe of Rick and Morty?
 
@@ -48,4 +48,5 @@ Initially, this project was set in the JavaScript dimension. But, just before st
 
 Happy Exploring, Fellow Rick and Morty Fans!
 
-[Rick and Morty](https://media.giphy.com/media/TimKW1D9V6cuuGE5WV/giphy.gif)
+![Rick and Morty](https://media.giphy.com/media/TimKW1D9V6cuuGE5WV/giphy.gif "Rick and Morty")
+
