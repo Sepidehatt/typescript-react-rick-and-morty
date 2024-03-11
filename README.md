@@ -1,30 +1,51 @@
-# React + TypeScript + Vite
+# Welcome to the Rick and Morty Project! 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A wise person (me 😄) once said, "Even as a Web developer, you should create fun things to stay motivated to learn!" And what could be more fun than combining coding with the universe of Rick and Morty?
 
-Currently, two official plugins are available:
+If you're a fan of the interdimensional adventures of Rick and Morty, love checking out character details, locations, episode appearances, and more, you've teleported to the right dimension!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started 🌟
 
-## Expanding the ESLint configuration
+Before we jump into the portal, let's make sure you have everything you need:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### How to Run
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone
+2. Install the dependencies:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+npm i
+```
+Start the server:
+
+```bash
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Voilà! You're now running the project locally. Explore the homepage rooted at / to see a table filled with Rick and Morty characters.
+
+# What's Inside? 🌌
+
+- A collection of Rick and Morty characters, powered by [Rick and Morty API](https://rickandmortyapi.com/api).
+- React Hooks (useState, useEffect, useContext, and more).
+- Custom hooks.
+- Lazy loading.
+
+## Running Tests 🧪
+
+Run this command:
+
+```bash
+npm run test
+```
+
+# See It Live! 🌍
+This project is deployed on Netlify. Check it out here: [Rick & Morty](https://rick-and-morty-fan-club.netlify.app/)
+
+
+A Fun Fact Before You Go 🎉
+Initially, this project was set in the JavaScript dimension. But, just before styling, I decided to refactor it in TypeScript. Check out the original JavaScript repository [here](https://github.com/Sepidehatt/React-Rick-and-Morty).
+
+Happy Exploring, Fellow Rick and Morty Fans!
+
+[Rick and Morty](https://media.giphy.com/media/TimKW1D9V6cuuGE5WV/giphy.gif)
