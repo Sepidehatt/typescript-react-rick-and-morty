@@ -16,7 +16,6 @@ export const useIntersectionObserver = (
     observer.current = new IntersectionObserver(
       ([entry]) => entry.isIntersecting && onIntersect(),
       {
-        root: document.querySelector('#scrollable-table'),
         rootMargin: '100px',
       },
     );
