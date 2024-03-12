@@ -1,13 +1,10 @@
 import React from 'react';
+import { CharacterDetailsTitle } from '../../interfaces/characterdetails.interface';
 import { Character } from '../../interfaces/characters.interface';
 
 interface CharacterInfoProps {
   character: Character;
-  characterDetails: {
-    label: string;
-    value: string;
-    emoji: string;
-  }[];
+  characterDetails: CharacterDetailsTitle[];
 }
 
 const CharacterInfo: React.FC<CharacterInfoProps> = ({
